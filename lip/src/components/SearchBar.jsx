@@ -43,7 +43,7 @@ const SearchBar = () => {
     // First check for exact course matches
     if (courseSearchTerms[lowerTerm]) {
       return [{
-        url: `http://localhost:5173${courseSearchTerms[lowerTerm]}`,
+        url: `https://seglko.org/lip${courseSearchTerms[lowerTerm]}`,
         displayName: lowerTerm.includes('b.pharm') ? 'Bachelor of Pharmacy (B.Pharm)' : 
                     lowerTerm.includes('d.pharm') ? 'Diploma in Pharmacy (D.Pharm)' :
                     'Pharmacy Courses',
@@ -55,7 +55,7 @@ const SearchBar = () => {
     const courseMatches = Object.entries(courseSearchTerms)
       .filter(([key]) => key.includes(lowerTerm) && lowerTerm.length > 2)
       .map(([key, path]) => ({
-        url: `http://localhost:5173${path}`,
+        url: `https://seglko.org/lip${path}`,
         displayName: key.includes('b.pharm') ? 'Bachelor of Pharmacy (B.Pharm)' : 
                     key.includes('d.pharm') ? 'Diploma in Pharmacy (D.Pharm)' :
                     'Pharmacy Courses',
@@ -208,7 +208,7 @@ const SearchBar = () => {
                   </div>
                   <div className="flex items-center justify-between mt-1">
                     <span className="text-xs text-gray-500 truncate">
-                      {result.url.replace('http://localhost:5173', '')}
+                      {result.url.replace('https://seglko.org/lip', '')}
                     </span>
                     <div className="flex items-center text-xs text-gray-400">
                       <ArrowBigRightDash  className="h-3 w-3 mr-1" />
