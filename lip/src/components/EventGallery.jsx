@@ -9,7 +9,7 @@ const eventImages = [
   {
     id: 1,
     src: "/event-gallery/new1.jpeg",
-    alt: "Annual Science Fair 2023"
+    alt: "Annual Science Fair 2024"
   },
   {
     id: 2,

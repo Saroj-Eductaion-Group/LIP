@@ -3,10 +3,10 @@ import { useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 const companyLogos = [
-  { src: '/company-logo/1.png', name: 'TechCorp' },
-  { src: '/company-logo/2.png', name: 'InnoPharma' },
-  { src: '/company-logo/3.png', name: 'MediLabs' },
-  { src: '/company-logo/4.png', name: 'BioGen' },
+  { src: '/company-logo/1.png', name: 'Eclat Healthcare' },
+  { src: '/company-logo/2.png', name: 'Max Healthcare' },
+  { src: '/company-logo/3.png', name: 'Medigreen' },
+  { src: '/company-logo/4.png', name: 'Tender Palm' },
   
 ];
 
