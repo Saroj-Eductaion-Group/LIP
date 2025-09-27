@@ -11,6 +11,7 @@ import AdmissionProcess from './pages/AdmissionProcedure';
 import ContactUs from './pages/Contact';
 import NotFound from './pages/NotFound';
 import PlacementPage from './pages/Placement';
+import OrientationPage from './pages/OrientationPage';
 
 const App = () => {
   return (
@@ -21,28 +22,16 @@ const App = () => {
     <Route path='/courses' element={ <CoursesPage /> } />
     <Route path='/about' element={ <AboutUs/> } />
     <Route path='/chairman-message' element={ <ChairmanMessage /> } />
-<Route path='/vision-mission' element={ <VisionMissionValues /> } /> 
-<Route path='/admission-process' element={ <AdmissionProcess/> } /> 
-<Route path='/contact' element={ <ContactUs/> } /> 
-<Route path='*' element={ <NotFound/>  } /> 
-<Route path='/placements' element={ <PlacementPage />  } /> 
-
-
-    
-
-
-
+    <Route path='/vision-mission' element={ <VisionMissionValues /> } /> 
+    <Route path='/admission-process' element={ <AdmissionProcess/> } /> 
+    <Route path='/contact' element={ <ContactUs/> } /> 
+    <Route path='*' element={ <NotFound/>  } /> 
+    <Route path='/placements' element={ <PlacementPage />  } /> 
     <Route path='/privacy-policy' element={<PrivacyPolicy/>}/>
     <Route path='/terms-and-conditions' element={<TermsAndConditions/>}/>
+    <Route path='/orientation' element={<OrientationPage/>}/>
 
-
-
-    
-
-
-
-
-   </Routes>
+</Routes>
   );
 }
 

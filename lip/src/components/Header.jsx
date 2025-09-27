@@ -25,6 +25,7 @@ const menuItems = [
     links: [
       { name: 'Admission Process', path: '/admission-process' },
       { name: 'Fee Structure', path: '/fee-structure' },
+      { name: 'Orientation Program 2025–26', path: '/orientation' },
       // { name: 'Scholarships', path: '/scholarships' },
       // { name: 'International Students', path: '/international-students' },
     ]
