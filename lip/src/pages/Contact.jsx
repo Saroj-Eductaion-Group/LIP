@@ -68,8 +68,8 @@ export default function ContactUs() {
           </header>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
-            {/* Left Info */}
-            <div className="lg:col-span-5 space-y-10">
+            {/* Left Info: map and contact info*/}
+            <div className="lg:col-span-5 space-y-15">
               <div className="bg-white rounded-2xl shadow-lg p-8 space-y-8">
                 <h2 className="text-2xl font-semibold text-indigo-900">
                   Contact Information
