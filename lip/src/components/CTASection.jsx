@@ -9,7 +9,7 @@ export const CTASection = () => (
         Ready to Start Your Journey in Pharmacy?
       </h2>
       <p className="mb-8">
-        Join Saroj College of Pharmacy and be a part of the future of healthcare.
+        Join Lucknow Institute of Pharmacy and be a part of the future of healthcare.
       </p>
       <a
       href="https://siu.in8.nopaperforms.com/"
