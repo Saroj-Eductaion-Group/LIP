@@ -113,7 +113,7 @@ const ScholarshipPage = () => {
                 <h3 className="text-blue-600 font-semibold text-2xl">Continued Support</h3>
               </div>
               <p className="text-gray-600 text-xl">
-                SIU remains committed to supporting its students throughout their academic journey.
+                LIP remains committed to supporting its students throughout their academic journey.
               </p>
             </div>
 
