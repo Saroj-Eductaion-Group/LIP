@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from 'react-helmet';
 import Layout from '../components/Layout';
 import { 
-  GraduationCap, 
+ 
   Info, 
   ListChecks, 
   Percent, 
@@ -25,10 +25,10 @@ const ScholarshipPage = () => {
           {/* Page Heading */}
           <div className="text-center mb-12">
             <div className='flex items-center justify-center'>
-              <GraduationCap className='hidden md:block h-10 w-10 mr-3' />
+             
               <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
-                <span className="text-gray-900">SCHOLARSHIP </span>
-                <span className="text-blue-600">PROGRAM</span>
+                <span className="text-gray-900">Scholarship </span>
+                <span className="text-blue-600">Program</span>
               </h2>
             </div>
             <p className="text-gray-600 text-xl max-w-2xl mx-auto">
