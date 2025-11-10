@@ -34,7 +34,7 @@ const menuItems = [
     title: 'Academics',
     links: [
       { name: 'Courses', path: '/courses' },
-      { name: 'Syllabus', path: '/syllabus' },
+      // { name: 'Syllabus', path: '/syllabus' },
       // { name: 'Academic Calendar', path: '/academic-calendar' },
       // { name: 'Examination', path: '/examination' },
     ]
