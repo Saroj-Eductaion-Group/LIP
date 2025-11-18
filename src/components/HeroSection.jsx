@@ -143,7 +143,7 @@ const ModernHeroSection = () => {
                 </motion.span>
               </motion.a>
 
-              <motion.a
+              {/* <motion.a
                 href="/courses"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
@@ -151,7 +151,7 @@ const ModernHeroSection = () => {
               >
                 <FlaskConical className="w-5 h-5" />
                 <span>Explore Programs</span>
-              </motion.a>
+              </motion.a> */}
             </motion.div>
 
             {/* Stats with Animated Icons */}

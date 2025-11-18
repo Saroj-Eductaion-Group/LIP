@@ -52,7 +52,7 @@ const Footer = () => {
           <ul className="space-y-3 text-sm">
             <li className="flex items-start">
               <FaMapMarkerAlt className="mt-1 mr-3 text-blue-500" />
-              <span>Chand Sarai, Near Gosaiganj, Sultanpur Road , 20th KM Stone, Lucknow, Uttar Pradesh, India, 226001</span>
+              <span>Chand Sarai, Near Gosaiganj, Sultanpur Road, 20th KM Stone, Lucknow, Uttar Pradesh, India, 226001</span>
             </li>
             <li className="flex items-center">
               <FaPhone className="mr-3 text-blue-500" />
