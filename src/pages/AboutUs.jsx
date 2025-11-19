@@ -12,7 +12,7 @@ export default function AboutUs() {
             Lucknow Institute of Pharmacy
           </h1>
           <p className="text-xl text-indigo-700 max-w-3xl mx-auto">
-            Pioneering pharmaceutical education since 2005 with innovation, research excellence, and industry-aligned training.
+            Pioneering pharmaceutical education since 2009 with innovation, research excellence, and industry-aligned training.
           </p>
         </div>
 
