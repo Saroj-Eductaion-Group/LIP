@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import logo from '../assets/images/lip-logo.png';
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaChevronDown, FaTimes, FaBars, FaSearch } from 'react-icons/fa';
-import SearchBar from './SearchBar'; // Import the SearchBar component
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaChevronDown, FaTimes, FaBars } from 'react-icons/fa';
+
 
 const menuItems = [
   {
@@ -16,8 +16,6 @@ const menuItems = [
       { name: 'About Us', path: '/about' },
       { name: 'Chairman Message', path: '/chairman-message' },
       { name: 'Vision & Mission', path: '/vision-mission' },
-      // { name: 'Infrastructure', path: '/infrastructure' },
-      // { name: 'Faculty', path: '/faculty' },
     ]
   },
   {
@@ -26,17 +24,13 @@ const menuItems = [
       { name: 'Admission Process', path: '/admission-process' },
       { name: 'Fee Structure', path: '/fee-structure' },
       { name: 'Orientation Program 2025–26', path: '/orientation' },
-      // { name: 'Scholarships', path: '/scholarships' },
-      // { name: 'International Students', path: '/international-students' },
+
     ]
   },
   {
     title: 'Academics',
     links: [
       { name: 'Courses', path: '/courses' },
-      // { name: 'Syllabus', path: '/syllabus' },
-      // { name: 'Academic Calendar', path: '/academic-calendar' },
-      // { name: 'Examination', path: '/examination' },
     ]
   },
   {
@@ -53,7 +47,6 @@ const Header = () => {
   const [hoveredItem, setHoveredItem] = useState(null);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const [showMobileSearch, setShowMobileSearch] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -107,8 +100,8 @@ const Header = () => {
               </motion.div>
             </Link>
 
-            {/* Desktop Navigation with Search */}
-            <nav className="hidden lg:flex items-center space-x-4">
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center space-x-1">
               {menuItems.map((item, index) => (
                 <div 
                   key={index} 
@@ -119,7 +112,7 @@ const Header = () => {
                   {item.links ? (
                     <>
                       <motion.button
-                        className="flex items-center text-gray-800 hover:text-blue-700 px-3 py-3 font-medium transition-colors relative group"
+                        className="flex items-center text-gray-800 hover:text-blue-700 px-4 py-3 font-medium transition-colors relative group"
                       >
                         <span>{item.title}</span>
                         <motion.span
@@ -158,7 +151,7 @@ const Header = () => {
                   ) : (
                     <Link
                       to={item.path}
-                      className="px-3 py-3 font-medium text-gray-800 hover:text-blue-700 relative group transition-colors"
+                      className="px-4 py-3 font-medium text-gray-800 hover:text-blue-700 relative group transition-colors"
                     >
                       {item.title}
                       <div className="absolute bottom-0 left-0 w-full h-0.5 bg-blue-700 origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
@@ -166,12 +159,6 @@ const Header = () => {
                   )}
                 </div>
               ))}
-              
-              {/* Search Bar - Desktop */}
-              <div className="ml-4 w-64">
-                <SearchBar />
-              </div>
-              
               <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.98 }}>
                 <Link
                   to="https://siu.in8.nopaperforms.com/"
@@ -183,43 +170,18 @@ const Header = () => {
               </motion.div>
             </nav>
 
-            {/* Mobile Header Actions */}
-            <div className="lg:hidden flex items-center space-x-4">
-              {/* Mobile Search Toggle Button */}
-              <button
-                className="text-gray-700 hover:text-blue-700 transition-colors"
-                onClick={() => setShowMobileSearch(!showMobileSearch)}
-              >
-                <FaSearch className="text-xl" />
-              </button>
-              
-              {/* Mobile Menu Button */}
-              <button
-                className="text-gray-700 focus:outline-none"
-                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              >
-                {mobileMenuOpen ? (
-                  <FaTimes className="text-2xl" />
-                ) : (
-                  <FaBars className="text-2xl" />
-                )}
-              </button>
-            </div>
+            {/* Mobile Menu Button */}
+            <button
+              className="lg:hidden text-gray-700 focus:outline-none"
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            >
+              {mobileMenuOpen ? (
+                <FaTimes className="text-2xl" />
+              ) : (
+                <FaBars className="text-2xl" />
+              )}
+            </button>
           </div>
-
-          {/* Mobile Search Bar */}
-          <AnimatePresence>
-            {showMobileSearch && (
-              <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: 'auto' }}
-                exit={{ opacity: 0, height: 0 }}
-                className="lg:hidden mb-4"
-              >
-                <SearchBar />
-              </motion.div>
-            )}
-          </AnimatePresence>
 
           {/* Mobile Navigation */}
           <AnimatePresence>

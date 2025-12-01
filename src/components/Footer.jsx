@@ -35,14 +35,15 @@ const Footer = () => {
             <li><Link to="/scholarships" className="hover:text-white">Scholarships</Link></li>
             <li>
               <a 
-                  href="/pdfs/academic_calendar.pdf" 
+                  href="/lip/pdfs/academic_calendar.pdf" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="hover:text-white"
                 >
                   Academic Calendar
                 </a>
-              </li>
+            </li>
+         
           </ul>
         </div>
 

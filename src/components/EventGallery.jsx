@@ -8,17 +8,17 @@ import 'swiper/css/pagination';
 const eventImages = [
   {
     id: 1,
-    src: "/event-gallery/new1.jpeg",
-    alt: "Annual Science Fair 2024"
+    src: "event-gallery/new1.jpeg",
+    alt: "Annual Science Fair 2023"
   },
   {
     id: 2,
-    src: "/event-gallery/new2.jpeg",
+    src: "event-gallery/new2.jpeg",
     alt: "Cultural Festival Performances"
   },
   {
     id: 3,
-    src: "/event-gallery/new3.jpeg",
+    src: "event-gallery/new3.jpeg",
     alt: "Inter-College Sports Competition"
   },
   

@@ -26,7 +26,7 @@ export const FeaturesSection = () => (
   <section className="py-16 bg-gray-50" id="programs">
     <div className="container mx-auto px-4">
       <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
-        Why Choose Lucknow Institute of Pharmacy?
+        Why Choose Lucknow Institute  of Pharmacy?
       </h2>
       <div className="grid md:grid-cols-3 gap-8">
         {features.map((feature, index) => (

@@ -23,19 +23,19 @@ const courses = [
       "Laboratory and Research Facilities",
     ],
   },
-  // {
-  //   id: "mpharma",
-  //   title: "Master of Pharmacy (M.Pharm)",
-  //   duration: "2 Years",
-  //   description:
-  //     "Advanced postgraduate program offering specializations in areas like Pharmacology, Pharmaceutics, and Pharmaceutical Chemistry, with emphasis on research and development.",
-  //   icon: <BookOpen className="w-8 h-8 text-green-600" />,
-  //   highlights: [
-  //     "Research-Oriented",
-  //     "Experienced Faculty",
-  //     "Collaborative Projects & Internships",
-  //   ],
-  // },
+  {
+    id: "mpharma",
+    title: "Master of Pharmacy (M.Pharm)",
+    duration: "2 Years",
+    description:
+      "Advanced postgraduate program offering specializations in areas like Pharmacology, Pharmaceutics, and Pharmaceutical Chemistry, with emphasis on research and development.",
+    icon: <BookOpen className="w-8 h-8 text-green-600" />,
+    highlights: [
+      "Research-Oriented",
+      "Experienced Faculty",
+      "Collaborative Projects & Internships",
+    ],
+  },
   {
     id: "dpharma",
     title: "Diploma in Pharmacy (D.Pharm)",

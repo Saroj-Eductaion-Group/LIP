@@ -23,7 +23,7 @@ export default function AdmissionProcess() {
     {
       number: 4,
       title: "Registration Fee",
-      description: "Candidates/Students are required to submit a registration fee of Rs. 2200 before proceeding.",
+      description: "Candidates/Students are required to submit a registration fee of Rs. 1000 before proceeding.",
     },
     {
       number: 5,
@@ -121,7 +121,7 @@ export default function AdmissionProcess() {
           <div className="border border-orange-200 bg-orange-50 rounded-lg p-6">
             <h4 className="font-semibold text-orange-800 mb-2">Important Information:</h4>
             <ul className="text-orange-700 space-y-1 text-sm list-disc list-inside">
-              <li>Registration fee of Rs. 2200 is mandatory and non-refundable</li>
+              <li>Registration fee of Rs. 1000 is mandatory and non-refundable</li>
               <li>Keep your email ID active throughout the admission process</li>
               <li>Take printouts of all forms for your records</li>
               <li>Contact our admission office for any technical difficulties</li>

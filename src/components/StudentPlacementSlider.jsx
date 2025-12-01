@@ -9,7 +9,7 @@ const placements = [
     package: "18 LPA",
     role: "B Pharma",
     date: "22/03/2025",
-    photo: "/placed-student/shaloni-devi.webp",
+    photo: "placed-student/shaloni-devi.webp",
   },
   {
   id: 1,
@@ -18,7 +18,7 @@ const placements = [
     package: "4 LPA",
     role: "B Pharma",
     date: "29/04/2025",
-    photo: "/placed-student/harsh-dixit.webp",
+    photo: "placed-student/harsh-dixit.webp",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ const placements = [
     package: "3 LPA",
     role: "B Pharma",
     date: "29/04/2025",
-    photo: "/placed-student/mansi-sahu.webp",
+    photo: "placed-student/mansi-sahu.webp",
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ const placements = [
     package: "4 LPA",
     role: "B Pharma",
     date: "29/04/2025",
-    photo: "/placed-student/surendra-pratap.webp",
+    photo: "placed-student/surendra-pratap.webp",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ const placements = [
     package: "4 LPA",
     role: "B Pharma",
     date: "29/04/2025",
-    photo: "/placed-student/pranjali-singh.webp",
+    photo: "placed-student/pranjali-singh.webp",
   },
   {
     id: 5,
@@ -54,7 +54,7 @@ const placements = [
     package: "3 LPA",
     role: "B Pharma",
     date: "08/04/2025",
-    photo: "/placed-student/ajay-pratap-yadav.webp",
+    photo: "placed-student/ajay-pratap-yadav.webp",
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const placements = [
     package: "3 LPA",
     role: "B Pharma",
     date: "08/04/2025",
-    photo: "/placed-student/piyush-pandey.webp",
+    photo: "placed-student/piyush-pandey.webp",
   },
   {
     id: 7,
@@ -72,7 +72,7 @@ const placements = [
     package: "4 LPA",
     role: "B Pharma",
     date: "08/04/2025",
-    photo: "/placed-student/pratit-srivastava.webp",
+    photo: "placed-student/pratit-srivastava.webp",
   },
   
   

@@ -1,11 +1,12 @@
 import React, { useState, useEffect, useRef } from "react";
-import { FiSend, FiX, FiMessageSquare, FiRefreshCw } from "react-icons/fi";
+import { FiSend, FiX, FiMessageSquare } from "react-icons/fi";
 import { Loader2 } from "lucide-react";
 
 const Chatbot = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
-  const [hasFirstOptionBeenSelected, setHasFirstOptionBeenSelected] = useState(false);
+  const [hasFirstOptionBeenSelected, setHasFirstOptionBeenSelected] =
+    useState(false);
   const [messages, setMessages] = useState([
     {
       id: 1,
@@ -20,7 +21,7 @@ const Chatbot = () => {
       sender: "bot",
       time: getCurrentTime(),
       options: [
-        "Pharmacy programs information",
+        "Academic programs information",
         "Admission process",
         "Campus facilities",
         "Placement details",
@@ -30,7 +31,7 @@ const Chatbot = () => {
   ]);
   const [inputValue, setInputValue] = useState("");
   const [formData, setFormData] = useState({
-    college: "LIP-ChatBot",
+    college :"LIP Chatbot",
     name: "",
     email: "",
     phone: "",
@@ -57,34 +58,6 @@ const Chatbot = () => {
     if (!isOpen) {
       setShowContactForm(false);
     }
-  };
-
-  const resetChat = () => {
-    setMessages([
-      {
-        id: 1,
-        text: "Hi! I'm your virtual assistant for Lucknow Institute of Pharmacy.",
-        sender: "bot",
-        time: getCurrentTime(),
-        options: null,
-      },
-      {
-        id: 2,
-        text: "How can I help you today?",
-        sender: "bot",
-        time: getCurrentTime(),
-        options: [
-          "Pharmacy programs information",
-          "Admission process",
-          "Campus facilities",
-          "Placement details",
-          "Contact administration",
-        ],
-      },
-    ]);
-    setShowContactForm(false);
-    setHasFirstOptionBeenSelected(false);
-    setInputValue("");
   };
 
   const handleInputChange = (e) => setInputValue(e.target.value);
@@ -152,27 +125,21 @@ const Chatbot = () => {
   const generateBotResponse = (userInput) => {
     let response;
     let options = null;
-    const input = userInput.toLowerCase();
 
-    if (input.includes("program")) {
+    if (userInput.toLowerCase().includes("program")) {
       response =
-        "We offer the following pharmacy programs:\n\n• B.Pharm (Bachelor of Pharmacy)\n• D.Pharm (Diploma in Pharmacy)\n)";
+        "We offer the following pharmacy courses:\n\n• D.Pharm\n• B.Pharm\n• M.Pharm";
       options = [
-        "B.Pharm details",
         "D.Pharm details",
+        "B.Pharm details",
+        "M.Pharm details",
         "Contact administration",
       ];
-    } else if (input.includes("admission")) {
-      response = `Admission Process:
-1. Apply online through our official website.
-2. Submit necessary documents.
-3. Entrance exam/interview (if applicable).
-4. Fee payment and confirmation.
-
-For detailed eligibility and dates, please visit our admissions page or contact us.`;
-    } else if (input.includes("facility")) {
+    } else if (userInput.toLowerCase().includes("admission")) {
+      response = `Admission Process:\n1. Register Yourself: siu.in8.nopaperforms.com/\n2. Verify Email\n3. Fill Application Form Online\n4. Pay Application Fee\n5. Submit Application`;
+    } else if (userInput.toLowerCase().includes("facility")) {
       response =
-        "Our campus facilities include:\n- Well-equipped pharmacy labs\n- Digital library with pharmaceutical journals\n- Seminar halls\n- Hostel accommodations\n- Sports facilities\n- Cafeteria";
+        "Our campus includes modern labs, a library, hostels, sports facilities, and more.";
       options = [
         "Lab details",
         "Library info",
@@ -180,27 +147,21 @@ For detailed eligibility and dates, please visit our admissions page or contact 
         "Sports facilities",
         "Contact administration",
       ];
-    } else if (input.includes("placement")) {
-      response = `Placement Highlights:
-- Dedicated placement cell for pharmacy students
-- Internship opportunities with top pharmaceutical companies
-- Campus recruitment drives with industry leaders
-- Alumni network in pharma sector
-
-Recent recruiters: Cipla, Sun Pharma, Dr. Reddy's, Lupin Ltd.`;
+    } else if (userInput.toLowerCase().includes("placement")) {
+      response = `Recent Placement Highlights:
+- Shaloni Devi → Max Health Care → 18 LPA
+- Harsh Dixit → Eclat Health → 4 LPA
+- Mansi Sahu → Eclat Health → 3 LPA
+- Surendra Pratap → Eclat Health → 4 LPA
+- Pranjali Singh → Eclat Health → 4 LPA
+- Ajay Pratap Yadav → Max Health Care → 3 LPA
+- Piyush Pandey → Max Health Care → 3 LPA
+- Pratit Srivastava → Max Health Care → 4 LPA`;
       options = ["Contact administration"];
-    } else if (input.includes("b.pharm")) {
-      response = `B.Pharm Program (4 years):
-- Core subjects: Pharmacology, Pharmaceutics, Pharmaceutical Chemistry, Pharmacognosy
-- Eligibility: 10+2 with Physics, Chemistry, Biology/Mathematics`;
-    } else if (input.includes("d.pharm")) {
-      response = `D.Pharm Program (2 years):
-- Focus on basic pharmacy practice and pharmaceutical sciences
-- Eligibility: 10+2 with Physics and Chemistry`;
     } else {
-      response = "I'm here to assist you with any queries about Lucknow Institute of Pharmacy.";
+      response = "I'm here to assist you with any queries about our institute.";
       options = [
-        "Pharmacy programs information",
+        "Academic programs information",
         "Admission process",
         "Campus facilities",
         "Placement details",
@@ -238,7 +199,7 @@ Recent recruiters: Cipla, Sun Pharma, Dr. Reddy's, Lupin Ltd.`;
 
       setFormStatus("Thank you for contacting us! We'll respond soon.");
       setFormData({
-        college: "LIP-ChatBot",
+        college: "LIP Chatbot",
         name: "",
         email: "",
         phone: "",
@@ -264,7 +225,7 @@ Recent recruiters: Cipla, Sun Pharma, Dr. Reddy's, Lupin Ltd.`;
           sender: "bot",
           time: getCurrentTime(),
           options: [
-            "Pharmacy programs information",
+            "Academic programs information",
             "Admission process",
             "Campus facilities",
             "Placement details",
@@ -304,21 +265,12 @@ Recent recruiters: Cipla, Sun Pharma, Dr. Reddy's, Lupin Ltd.`;
                 <p className="text-xs opacity-80">Online</p>
               </div>
             </div>
-            <div className="flex items-center space-x-2">
-              <button
-                onClick={resetChat}
-                className="text-white hover:text-blue-200 transition-colors p-1"
-                title="Reset chat"
-              >
-                <FiRefreshCw className="w-4 h-4" />
-              </button>
-              <button
-                onClick={toggleChatbot}
-                className="text-white hover:text-blue-200 transition-colors p-1"
-              >
-                <FiX className="w-5 h-5" />
-              </button>
-            </div>
+            <button
+              onClick={toggleChatbot}
+              className="text-white hover:text-blue-200 transition-colors"
+            >
+              <FiX className="w-5 h-5" />
+            </button>
           </div>
 
           <div className="flex-1 p-4 overflow-y-auto bg-gray-50">
@@ -360,7 +312,7 @@ Recent recruiters: Cipla, Sun Pharma, Dr. Reddy's, Lupin Ltd.`;
             {showContactForm && (
               <div className="mt-4 p-4 bg-white border border-gray-200 rounded-lg shadow-sm">
                 <h4 className="font-semibold text-gray-800 mb-3">
-                  Fill the Form
+                  Contact Form
                 </h4>
                 <form onSubmit={handleFormSubmit} className="space-y-3">
                   <input

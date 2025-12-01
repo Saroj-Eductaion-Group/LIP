@@ -8,12 +8,11 @@ import PartnerLogoSlider from '../components/PartnerLogoSlider';
 import StudentPlacementSlider from '../components/StudentPlacementSlider';
 import EventGallerySlider from '../components/EventGallery';
 import AIEnabledLearning from '../components/AIEnabledLearning';
-import ModernHeroSection from '../components/HeroSection';
 
 const HomePage = () => {
     return (
         <Layout>
-            <ModernHeroSection />
+            <HeroSection />
             {/* <AIEnabledLearning /> */}
             <PartnerLogoSlider />
             
